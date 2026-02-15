@@ -1,0 +1,32 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Maven build output
+target/
+
+# Compiled Java files
+*.class
+
+# Logs
+*.log
+
+# DB files (if using H2 / local DB)
+*.h2.db
+*.mv.db
+*.trace.db
+
+# IDE stuff (only if you ever open IDE)
+.idea/
+*.iml
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Temp files (Neovim etc.)
+*.swp
+*~
+
