@@ -11,5 +11,6 @@
 		<property name="hbm2ddl.auto">update</property> <!-- use create if you want to create new table everytime this code run -->
         <property name="show_sql">true</property>
         <property name="dialect">org.hibernate.dialect.MariaDBDialect</property>
+		<mapping class="io.priyazsh.Student"/>
 	</session-factory>
 </hibernate-configuration>
