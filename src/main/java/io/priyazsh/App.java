@@ -15,9 +15,15 @@ public class App {
 		SessionFactory factory = cfg.buildSessionFactory();
 		System.out.println(factory);
 
+		Student s = new Student();
+		s.setId(1);
+		s.setName("Priyansh");
+		s.setCity("Indore");
+		s.setRollno(29);
 		Session session = factory.openSession();
 		Transaction tnx = session.beginTransaction();
-
+		session.persist(s);
+		tnx.commit();
 		session.close();
 	}
 }
